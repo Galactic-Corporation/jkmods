@@ -59,11 +59,17 @@ a.downloadlink:hover {
 button.download {
     /*border: none;
     background: #0080ff;*/
-    width: 100px;
+    width: 100%;
     height: 40px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-weight: bolder;
+    border: 1px #2F2F2F solid;
 }
 button.download:hover {
-    /*background: #8AC5FF;*/
+    background-color: rgba(0,0,0,0.9);
+    box-shadow: black 1px 1px 10px 1px;
+    border: none;
     cursor: pointer;
 }
 section, div.article {
@@ -74,7 +80,7 @@ section, div.article {
 
 section {
     width: 1000px;
-    margin: auto;
+    margin: 10px auto;
 }
 header {
     width: 600px;
@@ -181,4 +187,48 @@ td.buttonav a {
 td.buttonav:hover {
         background-color: rgba(0, 0, 0, 0.90);
 
+}
+
+/*
+###############################
+                       SEARCH BOX                 #
+###############################
+*/
+#search {
+    position: absolute;
+    top: 60px;
+    z-index: 1000;
+    margin-left: 400px;
+}
+
+#search input[type="text"] {
+    background: url(search-dark.png) no-repeat 10px 6px rgba(47,47,47,0.7);
+    border: 0 none;
+    font: bold 12px Arial,Helvetica,Sans-serif;
+    color: white;
+    width: 150px;
+    padding: 6px 15px 6px 35px;
+/*    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;*/
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+/*    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;*/
+    }
+
+/*#search input[type="text"]:focus {
+    width: 200px;
+    }*/
+
+
+#breadcrumb {
+    position: absolute;;
+    top: 65px;
+    z-index: 1000;
+    margin-left: 5px;
 }
