@@ -49,16 +49,17 @@ function getMod($sql) {
     $msg = 'PDO ERROR at' . $e->getFile() . ' L.' . $e->getLine() . ' : ' . $e->getMessage();
     die($msg);
 	}
-
+	$count = $select->rowCount();
+	if ($count > 0) {
 	while ($ligne = $select->fetch() ) {
 		$image = $ligne['picMOD'];
 		$user = $ligne['nameMOD'];
 		$description = $ligne['descMOD'];
 		$link = $ligne['linkMOD'];
 		item($image,$user,$description,$link);
-	}
-
-	if ($ligne == "") echo "<section> No result found</section>";
+		}
+	} 
+	else echo "<section> No result found</section>";
 }
 
 ?>
