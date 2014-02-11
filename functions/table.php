@@ -57,6 +57,8 @@ function getMod($sql) {
 		$link = $ligne['linkMOD'];
 		item($image,$user,$description,$link);
 	}
+
+	if ($ligne == "") echo "<section> No result found</section>";
 }
 
 ?>

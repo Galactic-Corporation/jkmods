@@ -1,0 +1,8 @@
+mkdir tmp
+cp *.pk3 tmp/skin.zip
+mv *.pk3 mods/skins/
+cd tmp/
+unzip skin.zip
+cd ../
+ mv `find -name icon_default.jpg` img/skins/avatar.jpg
+ rm -Rf  tmp

@@ -63,7 +63,7 @@ function footer() {
                     </td>
                     <td><a target="_blank" href="http://jediknight3.filefront.com/">JK3 Filefront</a>
                     </td>
-                    <td><a target="_blank" href="https://www.zend2.com/">Proxy Online</a>
+                    <td><a target="_blank" href="http://incloak.com/">Online proxy</a>
                     </td>
                 </tr>
                 <tr>
