@@ -14,14 +14,20 @@ html {
 body {
     margin: 0;
     padding: 0;
+    margin: auto;
+    min-width: 600px;
 }
 div#content {
     max-width: 1300px;
     min-width: 750px;
     margin: auto;
     text-align: center;
-
 }
+/*
+###############################
+                                ITEM 
+###############################
+*/
 div.article {
     width: 300px;
     display: inline-block;
@@ -37,9 +43,8 @@ div.desc {
     text-align: center;
     margin: auto;
 }
-
 div.desc p {
-	text-align: justify;
+    text-align: justify;
 }
 a {
     text-decoration: none;
@@ -48,26 +53,24 @@ a {
 a:hover {
     color: #0080ff;
 }
-
 a.downloadlink {
-	color: black;
+    color: black;
 }
-
 a.downloadlink:hover {
-	color: black;
+    color: black;
 }
 button.download {
     /*border: none;
     background: #0080ff;*/
     width: 100%;
     height: 40px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     font-weight: bolder;
     border: 1px #2F2F2F solid;
 }
 button.download:hover {
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     box-shadow: black 1px 1px 10px 1px;
     border: none;
     cursor: pointer;
@@ -77,11 +80,15 @@ section, div.article {
     box-shadow: black 1px 1px 10px 1px;
     padding: 10px;
 }
-
 section {
     width: 1000px;
     margin: 10px auto;
 }
+/*
+###############################
+                               HEADER
+###############################
+*/
 header {
     width: 600px;
     margin: auto;
@@ -97,12 +104,11 @@ header {
     margin: auto;
 }
 #logo {
-
     z-index: -10;
     margin: 64px auto;
 }
 ul#nav {
-	position: absolute;
+    position: absolute;
     list-style-type: none;
     margin-top: 55px;
     margin-bottom: 50px;
@@ -114,6 +120,11 @@ ul#nav li {
     margin: 0 80px;
     vertical-align: top;
 }
+/*
+###############################
+                               FOOTER 
+###############################
+*/
 #footer {
     background-color: rgba(0, 0, 0, 0.75);
     width: 100%;
@@ -122,11 +133,11 @@ ul#nav li {
     padding: 20px 0;
 }
 #footer2 {
-    width: 1000px;
+    width: 600px;
     margin: 20px auto;
 }
 #footer-content {
-    width: 1000px;
+    width: 600px;
     margin: auto;
     text-align: center;
 }
@@ -136,99 +147,134 @@ ul#nav li {
 hr {
     border-color: #0080ff;
 }
-
+/*
+###############################
+                                ITEM 
+###############################
+*/
 div.article ul {
-	list-style-type: none;
-	text-align: left;
-	padding: 0;
-	height: 200px;
-
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    height: 200px;
 }
-
 span {
-        color: #0080ff;
-
+    color: #0080ff;
 }
-
 span.name {
-	float: right;
+    float: right;
 }
-
 div.article ul li p {
-	text-align: justify;
+    text-align: justify;
 }
-
 table#secondnav {
     margin: auto;
     margin-top: 50px;
 }
-
 td#space {
-        width: 10px;
+    width: 10px;
 }
-
 table#secondnav td {
     height: 300px;
-
-
 }
-
 td.buttonav {
     width: 500px;
     background-color: rgba(0, 0, 0, 0.75);
     box-shadow: black 1px 1px 10px 1px;
 }
-
 td.buttonav a {
-     display: block; width: 100%; height: 100%;
-     padding-top: 27%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 27%;
 }
-
 td.buttonav:hover {
-        background-color: rgba(0, 0, 0, 0.90);
-
+    background-color: rgba(0, 0, 0, 0.90);
 }
-
 /*
 ###############################
-                       SEARCH BOX                 #
+                                SEARCH BOX 
 ###############################
 */
-#search {
+ #search {
     position: absolute;
     top: 60px;
     z-index: 1000;
     margin-left: 400px;
 }
-
 #search input[type="text"] {
-    background: url(search-dark.png) no-repeat 10px 6px rgba(47,47,47,0.7);
+    background: url(search-dark.png) no-repeat 10px 6px rgba(47, 47, 47, 0.7);
     border: 0 none;
-    font: bold 12px Arial,Helvetica,Sans-serif;
+    font: bold 12px Arial, Helvetica, Sans-serif;
     color: white;
     width: 150px;
     padding: 6px 15px 6px 35px;
-/*    -webkit-border-radius: 20px;
+    /*    -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;*/
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
     -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
-/*    -webkit-transition: all 0.7s ease 0s;
+    /*    -webkit-transition: all 0.7s ease 0s;
     -moz-transition: all 0.7s ease 0s;
     -o-transition: all 0.7s ease 0s;
     transition: all 0.7s ease 0s;*/
-    }
-
+}
 /*#search input[type="text"]:focus {
     width: 200px;
     }*/
-
-
-#breadcrumb {
-    position: absolute;;
+ #breadcrumb {
+    position: absolute;
+    ;
     top: 65px;
     z-index: 1000;
     margin-left: 5px;
+}
+/*
+###############################
+                    FORM SUBMIT PK3 
+###############################
+*/
+#sendfile section {
+    width: 600px;
+}
+#sendfile table {
+    margin: auto;
+}
+#sendfile tr, #sendfile td {
+    text-align: left;
+}
+#sendfile input[type="text"], #sendfile textarea {
+    background: rgba(47, 47, 47, 0.7);
+    border: 0 none;
+    font: bold 12px Arial, Helvetica, Sans-serif;
+    color: white;
+    width: 150px;
+    padding: 6px 15px 6px 35px;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+}
+#sendfile select, #sendfile input[type="submit"] {
+    width: 139px;
+    border: 0 none;
+    background: rgba(47, 47, 47, 0.7);
+    color: white;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+}
+#sendfile input[type="submit"] {
+    height: 30px;
+}
+#sendfile input[type="submit"]:hover {
+    cursor: pointer;
+    box-shadow: black 1px 1px 10px 1px;
+
+}
+#sendfile tr {
+    height: 50px;
 }

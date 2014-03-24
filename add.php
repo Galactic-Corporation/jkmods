@@ -34,6 +34,56 @@ function submitFile($type) {
 	}
 	system('rm -Rf tmp');
 }
-submitFile("map");
+?>
+
+<form id="sendfile" method="get" action="add.php">
+    <section>
+        <table>
+            <tr>
+                <td class="label">
+                    <label>Name :</label>
+                </td>
+                <td>
+                    <input name="name" type="text" required />
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label>Description (optional) :</label>
+                </td>
+                <td>
+                    <textarea rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label>Type of mod :</label>
+                </td>
+                <td>
+                    <SELECT name="type">
+                        <OPTION VALUE="skin" selected>Skin</OPTION>
+                        <OPTION VALUE="map">Map</OPTION>
+                    </SELECT>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label>PK3 File :</label>
+                </td>
+                <td>
+                    <input name="file" type="file" required />
+                </td>
+            </tr>
+            <tr><td></td><td>
+        <input type="submit" value="submit" />
+</td></tr>
+        </table>
+    </section>
+</form>
+
+
+
+
+<?php
 footer();
 ?>
